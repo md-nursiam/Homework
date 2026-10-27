@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+}
+
+.font-bengali {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Notebook paper ruling effect */
+.notebook-page {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #f43f5e 79px, #f43f5e 81px, transparent 81px),
+    linear-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 100% 100%, 100% 2.25rem;
+}
+
+.diary-ruled {
+  background-color: #ffffff;
+  border-left: 3px double #f43f5e;
+}
+
+/* Print view optimization */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page {
+    page-break-after: always;
+    box-shadow: none !important;
+    border: 1px solid #94a3b8 !important;
+  }
+}

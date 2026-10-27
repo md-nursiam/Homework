@@ -1,0 +1,8 @@
+{
+  "name": "Home work - Digital Dairy & Study Management",
+  "description": "Smart school and tuition homework diary, upcoming exam tracker with remarks, and weekly routine management system for teachers and students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
